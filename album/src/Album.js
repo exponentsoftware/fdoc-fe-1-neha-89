@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Album = (props)=>{
+const Album = ({albumCover,albumTitle,album,artist})=>{
     return(
         <>
         <div className = "containerAlbum">
-        <img src={props.albumCover} alt="Album-cover" className="album_img" />
+        <img src={albumCover} alt="Album-cover" className="album_img" />
         <div className="album_info">
-          <p>{props.albumTitle}</p>
-          <p>{props.album}</p>
-          <span className="album_category">{props.artist}</span>
+          <p>{albumTitle}</p>
+          <p>{album}</p>
+          <span className="album_category">{artist}</span>
         </div>
         </div>
         </>
